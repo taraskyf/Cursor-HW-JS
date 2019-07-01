@@ -1,0 +1,75 @@
+1.
+
+
+
+function convert (dolars){
+  const grn = dolars * 8;
+  return `${grn} гривень`;
+}
+
+   2 спосіб
+   
+  const x = 8;
+let result;
+function convert (amount){
+  result = amount * x ;
+  console.log(result);
+}
+
+
+
+2.
+
+ function reverse(str){
+  let a = str.split("");
+  let x = a.reverse();
+  let result = x.join("");
+  console.log(result);
+}
+
+3.
+
+  function printStairs(n){
+    for(let i = 2; i <= n+1; i++){
+          console.log(new Array(i).join("#"));
+    }
+
+}
+printStairs(5)
+
+
+4.
+
+ function sumRange(start, end){
+    let a = 0;
+   for(let x = start; x <= end ; x++){
+       a += x;
+
+   }
+       return a;
+ }
+
+
+5.
+
+  function min(a, b, c){
+  let x = Math.min(a,b,c);
+  console.log(x);
+}
+
+
+6.
+
+7.
+
+
+function firstAndLastToUpper(str){
+  let a = str.toLowerCase();
+  let b = a[0].toUpperCase();
+  let c = a[a.length - 1];
+  c = c.toUpperCase();
+  let x = a.slice(1, a.length - 1);
+  let result = b + x + c;
+  console.log(result);
+}
+firstAndLastToUpper("ReDwErEd")
